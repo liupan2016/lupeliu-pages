@@ -1,0 +1,42 @@
+{
+  "name": "lupeliu-pages",
+  "version": "0.1.0",
+  "description": "static web app workflow",
+  "keywords": [
+    "lupeliu-pages",
+    "zce"
+  ],
+  "repository": "lupeliu/lupeliu-pages",
+  "license": "MIT",
+  "author": "lupeliu <727674928@qq.com> (https://github.com/liupan2016)",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "lint": "standard --fix",
+    "test": "jest --coverage",
+    "prepare": "npm run lint && npm run test"
+  },
+  "renovate": {
+    "extends": [
+      "zce"
+    ]
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "26.6.3",
+    "standard": "16.0.3"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  }
+}
